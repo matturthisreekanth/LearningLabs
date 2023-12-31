@@ -1,0 +1,17 @@
+name: Print Date Workflow
+
+on:
+ push:
+   branches:
+     - main
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Printing Date
+      run: date
